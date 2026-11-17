@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SoundFix – Earbuds, Neckband &amp; Bluetooth Speaker Service</title>
+<style>
+:root{--bg:#f7f8fb;--surface:#fff;--text:#14182a;--muted:#5b6279;--brand:#5b4bff;--brand2:#00c2a8;--line:#e3e6ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1020;--surface:#171a30;--text:#eef0fa;--muted:#a0a7c4;--brand:#8b7fff;--brand2:#2ee6c8;--line:#262a4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1020;--surface:#171a30;--text:#eef0fa;--muted:#a0a7c4;--brand:#8b7fff;--brand2:#2ee6c8;--line:#262a4a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--surface);border-bottom:1px solid var(--line);z-index:20}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:-.5px}
+.logo span{color:var(--brand)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--brand)}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:transparent;color:var(--text);border:1.5px solid var(--line)}
+.hero{padding:72px 0 56px;text-align:center}
+.tag{display:inline-block;background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.85rem;color:var(--muted)}
+h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.12;margin:18px 0 14px;letter-spacing:-1.2px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:600px;margin:0 auto 28px;color:var(--muted);font-size:1.1rem}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat b{display:block;font-size:1.5rem}
+.stat span{color:var(--muted);font-size:.9rem}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 8px;letter-spacing:-.6px}
+.sub{color:var(--muted);margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.ico{font-size:2rem}
+.card h3{margin:10px 0 6px}
+.card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:.95rem}
+.steps{counter-reset:s}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;margin-bottom:10px}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+.why{background:var(--surface);border-block:1px solid var(--line)}
+.why .grid div{padding:6px 0}
+.why b{display:block}
+.why span{color:var(--muted);font-size:.95rem}
+form{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;max-width:560px}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:700px){nav ul{display:none}.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<div class="logo">Sound<span>Fix</span></div>
+<ul><li><a href="#services">Services</a></li><li><a href="#process">How it works</a></li><li><a href="#why">Why us</a></li><li><a href="#book">Book</a></li></ul>
+<a class="btn" href="#book">Book a repair</a>
+</nav></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<span class="tag">🎧 Audio repair &amp; service centre</span>
+<h1>Your audio gear, <em>fixed fast</em> and fixed right.</h1>
+<p>Professional repair for earbuds, neckbands and Bluetooth speakers. Free diagnosis, honest pricing and warranty on every repair.</p>
+<div class="cta"><a class="btn" href="#book">Book a free check-up</a><a class="btn alt" href="#services">See services</a></div>
+<div class="stats">
+<div class="stat"><b>Free</b><span>Diagnosis</span></div>
+<div class="stat"><b>24–48 hrs</b><span>Typical turnaround</span></div>
+<div class="stat"><b>Warranty</b><span>On every repair</span></div>
+</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>What we repair</h2><p class="sub">All popular brands and models.</p>
+<div class="grid">
+<div class="card"><div class="ico">🎧</div><h3>Earbuds / TWS</h3><ul><li>Battery replacement</li><li>Charging case repair</li><li>One side not working</li><li>Pairing &amp; connectivity issues</li><li>Mic and speaker faults</li></ul></div>
+<div class="card"><div class="ico">🎵</div><h3>Neckbands</h3><ul><li>Battery &amp; charging port</li><li>Cable and wire breakage</li><li>Button and volume control</li><li>Low sound / no sound</li><li>Bluetooth not connecting</li></ul></div>
+<div class="card"><div class="ico">🔊</div><h3>Bluetooth speakers</h3><ul><li>Battery replacement</li><li>Charging jack repair</li><li>Distorted or low volume</li><li>Speaker driver replacement</li><li>Power and pairing faults</li></ul></div>
+</div></div></section>
+
+<section id="process" class="why"><div class="wrap">
+<h2>How it works</h2><p class="sub">Simple, transparent, no surprises.</p>
+<div class="grid steps">
+<div class="card step"><h3>Book</h3><p>Send us a message or fill the form below.</p></div>
+<div class="card step"><h3>Diagnose</h3><p>We test your device and share the exact fault and cost.</p></div>
+<div class="card step"><h3>Repair</h3><p>Work starts only after you approve the quote.</p></div>
+<div class="card step"><h3>Collect</h3><p>Pick up your device, tested and with warranty.</p></div>
+</div></div></section>
+
+<section id="why"><div class="wrap">
+<h2>Why choose us</h2><p class="sub">Small shop. Careful work.</p>
+<div class="grid">
+<div><b>✅ Quality parts</b><span>Tested components for lasting repairs.</span></div>
+<div><b>💬 Honest quotes</b><span>You approve the price before any work.</span></div>
+<div><b>🛡️ Repair warranty</b><span>We stand behind our work.</span></div>
+<div><b>⚡ Quick service</b><span>Most repairs done within 1–2 days.</span></div>
+</div></div></section>
+
+<section id="book"><div class="wrap">
+<h2>Book a repair</h2><p class="sub">Fill in the details and we will continue on WhatsApp.</p>
+<form id="f">
+<input id="n" placeholder="Your name" required>
+<select id="d"><option>Earbuds / TWS</option><option>Neckband</option><option>Bluetooth speaker</option></select>
+<input id="b" placeholder="Brand and model (e.g. boAt Airdopes)">
+<textarea id="p" rows="3" placeholder="What is the problem?"></textarea>
+<button class="btn" type="submit">Send on WhatsApp</button>
+</form>
+<p class="sub" style="margin-top:20px">📞 <a href="tel:+919442261828" style="color:inherit">+91 94422 61828</a> &nbsp;·&nbsp; 📍 Your shop address here &nbsp;·&nbsp; 🕘 Mon–Sat, 10 am – 7 pm</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 SoundFix. All rights reserved.</div></footer>
+
+<script>
+var WA="919442261828"; // replace with your WhatsApp number (country code + number)
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var m="Hello SoundFix, I need a repair.\nName: "+n.value+"\nDevice: "+d.value+"\nModel: "+b.value+"\nProblem: "+p.value;
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank");
+});
+</script>
+</body>
+</html>
